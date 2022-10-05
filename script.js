@@ -1,3 +1,3 @@
-var dateTime = moment().format("MMM Do YYYY")
-$("#currentDay").text(dateTime)
-console.log(dateTime)
+var date = moment().format("MMM Do YYYY")
+$("#currentDay").text(date)
+console.log(date)
