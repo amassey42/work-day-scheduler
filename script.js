@@ -1,8 +1,12 @@
+//Gloabl variables
+
+
+
+
 //date and time
 function displayTime(){
-var dateTime = moment().format("MMM Do YYYY hh:mm:ss A")
-$("#currentDay").text(dateTime)
-console.log(dateTime)
+let currentDateTime = moment().format("MMM Do YYYY hh:mm:ss A")
+$("#currentDay").text(currentDateTime)
 }
 
 setInterval(displayTime, 1000)
