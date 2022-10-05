@@ -14,19 +14,18 @@ function blockColor(){
 let currentTime = moment().hours()
 console.log(currentTime)
 
-while (currentTime > timeClass) {
-    $(`#${timeClass}`).css("background-color", "#d3d3d3")
+    while (currentTime > timeClass) {
+    $(`#${timeClass}`).addClass("past")
     timeClass++
-}
-while (currentTime == timeClass) {
-    $(`#${timeClass}`).css("background-color", "#ff6961")
+    }
+    while (currentTime == timeClass) {
+    $(`#${timeClass}`).addClass("present")
     timeClass++
-} 
-while (currentTime <= timeClass && timeClass <= 17) {
-    $(`#${timeClass}`).css("background-color", "#77dd77")
+    } 
+    while (currentTime <= timeClass && timeClass <= 17) {
+    $(`#${timeClass}`).addClass("future")
     timeClass++
-}
-
+    }
 }
 
 blockColor()
