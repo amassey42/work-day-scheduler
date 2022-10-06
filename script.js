@@ -1,5 +1,14 @@
 //Gloabl variables
-let timeClass = 9
+let timeClass = 0;
+let nineAmButton = $('#nine-am-button')
+let tenAmButton = $('#ten-am-button')
+let elevenAmButton = $('#eleven-am-button')
+let twelvePmButton = $('#twelve-pm-button')
+let onePmButton = $('#one-pm-button')
+let twoPmButton = $('#two-pm-button')
+let threePmButton = $('#three-pm-button')
+let fourPmButton = $('#four-pm-button')
+let fivePmButton = $('#five-pm-button')
 
 //date 
 function displayTime(){
@@ -27,5 +36,14 @@ console.log(currentTime)
     timeClass++
     }
 }
-
+//tells the block color to fire
 blockColor()
+
+
+//save list to local storage
+//when save button is clicked it saves the line 
+
+//each line is saved differently in local storage
+
+
+//when page is refreshed it pulls local storage and places what is saved back into its position. 
