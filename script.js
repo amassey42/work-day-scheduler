@@ -11,7 +11,7 @@ let threePmButton = $('.three-pm-button')
 let fourPmButton = $('.four-pm-button')
 let fivePmButton = $('.five-pm-button')
 
-//date 
+//calculates the current day using moment.js
 function displayTime(){
 let currentDay = moment().format("MMM Do YYYY")
 $("#currentDay").text(currentDay)
@@ -37,11 +37,7 @@ console.log(currentTime)
     timeClass++
     }
 }
-//tells the block color to fire
-blockColor();
 
-
-//save list to local storage
 //when save button is clicked it saves the line 
 nineAmButton.on("click", function(){
     let nineAmText = $('#9Text').val();
@@ -115,7 +111,6 @@ function retriveLocalStorage(){
 }
 
 
-
-
-
+//fires off the functions
 retriveLocalStorage();
+blockColor();
